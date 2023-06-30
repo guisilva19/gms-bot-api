@@ -12,4 +12,9 @@ export class UserController {
     const allUsers = await UserService.createUserService(userData);
     return res.status(200).json(allUsers);
   }
+
+  // static async twilioController(req: Request, res: Response) {
+  //   console.log(req.body)
+  //   return res.sendStatus(200);
+  // }
 }
