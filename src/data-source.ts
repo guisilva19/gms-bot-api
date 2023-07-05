@@ -10,7 +10,7 @@ const prismaConfig: PrismaConfig = {
   development: {
     // Configuração para o ambiente de desenvolvimento local
     // Coloque aqui as configurações específicas para o ambiente local
-    url: process.env.DATABASE_URL || 'postgresql://<username>:<password>@localhost:5432/mgs',
+    url: process.env.DATABASE_URL || 'postgresql://<username>:<password>@localhost:5432/database',
   },
   production: {
     // Configuração para o ambiente de produção (servidor)

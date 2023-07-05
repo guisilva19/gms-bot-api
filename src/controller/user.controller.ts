@@ -8,13 +8,14 @@ export class UserController {
   }
 
   static async createUserController(req: Request, res: Response) {
-    const userData = req.body
+    // const userData = {
+    //   name: 'Gui',
+    //   email: 'gui@gmail.com',
+    //   username: "guiga",
+    //   password: "123"
+    // }
+    const userData = req.body;
     const allUsers = await UserService.createUserService(userData);
     return res.status(200).json(allUsers);
   }
-
-  // static async twilioController(req: Request, res: Response) {
-  //   console.log(req.body)
-  //   return res.sendStatus(200);
-  // }
 }
